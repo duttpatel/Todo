@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="card-columns" *ngIf="todos.length > 0">
+                <div>
+                    <appTodoListItem 
+                        [todo]="todo"
+                        *ngFor="let todo of todos"
+                        (onTodoCompleted)="onTodoComplete($event)"></appTodoListItem>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

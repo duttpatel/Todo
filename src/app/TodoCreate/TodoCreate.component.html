@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center mt-2">
+                <input
+                 type="Text" 
+                 class="form-control"
+                 id="todo_details" 
+                 placeholder="What to do ?" 
+                 autofocus 
+                 [(ngModel)]="newtodo.task"
+                 (keyup.enter)="addTodo()">
+        </div>
+        
+    </div>
+</div>

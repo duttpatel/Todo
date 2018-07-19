@@ -1,0 +1,16 @@
+<div class="card bg-danger mt-2 rounded-3" #card>
+    <div class="card-body text-center text-white">
+        <p class="card-text">
+            <input type="checkbox" class="form-check-input" value="" [checked]="todo.finish" (click)="onTodoComplete(todo)" (change)="onChanged(todo)"> {{ todo.task }}
+        </p>
+
+    </div>
+    <div class="card-footer text-center">
+        <button class="btn btn-outline-light">
+            <i class="fa fa-trash  fa-lg"></i>
+        </button>
+        <button class="btn btn-outline-light ml-3">
+            <i class="fa fa-edit  fa-lg"></i>
+        </button>
+    </div>
+</div>
